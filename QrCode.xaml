@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="hhh.QrCode" xmlns:zxcm="clr-namespace:ZXing.Common;assembly=zxing.portable" xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"  >
+
+  
+
+       <StackLayout VerticalOptions="FillAndExpand" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+        
+        <StackLayout VerticalOptions="FillAndExpand" Margin="20,60,20,20" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+             <Label  x:Name="rc_no" IsVisible="false" TextColor="DarkBlue" HorizontalTextAlignment="End"  Margin="0,0,0,0" FontSize="Micro"></Label>
+               <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand">
+       <zxing:ZXingBarcodeImageView IsVisible="true" x:Name="QRCodeView" BindingContext="{x:Reference Name=rc_no}" BarcodeValue="{Binding Path=Text}"   BarcodeFormat="QR_CODE" HeightRequest="400" WidthRequest="400" >
+           <zxing:ZXingBarcodeImageView.BarcodeOptions>
+               <zxcm:EncodingOptions Width="200" Height="200"/>
+           </zxing:ZXingBarcodeImageView.BarcodeOptions>
+
+       </zxing:ZXingBarcodeImageView>
+           </Grid>
+        </StackLayout>
+ 
+        </StackLayout>
+</ContentPage>

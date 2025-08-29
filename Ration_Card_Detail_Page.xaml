@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="hhh.Ration_Card_Detail_Page">
+ <StackLayout    Margin="0,0,0,0" HorizontalOptions="FillAndExpand" BackgroundColor="#ecf7dc"
+                 Orientation="Vertical">
+                   
+         <ListView  x:Name="rc_list" HasUnevenRows="True"  BackgroundColor="Transparent"  VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="FillAndExpand" ItemSelected="OnSelection"  >
+             <ListView.ItemTemplate>
+                 <DataTemplate>
+                     <ViewCell >
+                             <StackLayout Padding="21" VerticalOptions="CenterAndExpand"  Margin="0,0,0,0" 
+                 Orientation="Horizontal" 
+                                    BackgroundColor="#cff9fa"    >
+                                             <StackLayout    VerticalOptions="CenterAndExpand"  Margin="0,0,0,0" 
+                 Orientation="Vertical" HorizontalOptions="StartAndExpand"
+                                    BackgroundColor="#cff9fa" >
+                               <Label Text="Aadhaar:"   FontSize="Small" FontFamily="Arial"
+                                         TextColor="#cff9fa"/>
+                           
+                             <Label Text="{Binding AADHAAR_NUMBER}" x:Name="AADHAAR_NUMBER"  FontSize="Small" FontFamily="Arial"
+                                    TextColor="#cff9fa"/>
+ 
+ 
+
+                                </StackLayout>
+                                    <Line   X1="0" X2="0" Y1="0" Y2="50"  Stroke="Black" HorizontalOptions="Start" StrokeThickness="0.5" />
+    
+                                     <StackLayout  Padding="5" VerticalOptions="Start"  Margin="0,0,0,0" 
+                 Orientation="Vertical" HorizontalOptions="StartAndExpand"
+                                    BackgroundColor="#cff9fa" >
+                               <Label Text="Member Name:"   FontSize="Small" FontFamily="Arial"
+                                      FontAttributes="Bold"  
+                                      TextColor="Black"/>
+  
+                             <Label Text="{Binding MEMBER_NAME}" FontSize="Small" FontFamily="Arial"
+                                    FontAttributes="Bold"  TextColor="Blue"/>
+
+                                         </StackLayout>
+                                         <Line   X1="0" X2="0" Y1="0" Y2="50"  Stroke="Black" HorizontalOptions="Start" StrokeThickness="0.5" />
+    
+                            <StackLayout Padding="5" VerticalOptions="CenterAndExpand"  Margin="0,0,0,0" 
+                 Orientation="Vertical" HorizontalOptions="StartAndExpand"
+                                    BackgroundColor="#cff9fa" >
+                                       
+                               <Label Text="D.O.B.:"  FontSize="Small" FontFamily="Arial"
+                                      FontAttributes="Bold"   TextColor="Black"/>
+                           
+                             <Label Text="{Binding  DATE_OF_BIRTH}"  FontSize="Small" FontFamily="Arial"
+                                    FontAttributes="Bold"  TextColor="Blue"/>
+                                </StackLayout>
+                  <Line   X1="0" X2="0" Y1="0" Y2="50"  Stroke="Black" HorizontalOptions="Start" StrokeThickness="0.5" />
+    
+  
+                                  <StackLayout  Padding="5" VerticalOptions="CenterAndExpand"  Margin="0,0,0,0" 
+                 Orientation="Vertical" HorizontalOptions="StartAndExpand"
+                                 BackgroundColor="#cff9fa" >
+                               <Label Text="Gender:"   FontSize="Small" FontFamily="Arial"
+                                      FontAttributes="Bold" 
+                                       TextColor="Black"/>  
+                             <Label Text="{Binding  Gender}"  FontSize="Small" FontFamily="Arial"
+                                    FontAttributes="Bold"  TextColor="Blue"/>
+                                      </StackLayout>
+                            <Line   X1="0" X2="0" Y1="0" Y2="50"  Stroke="Black" HorizontalOptions="Start" StrokeThickness="0.5" />
+    
+                            <StackLayout Padding="5" VerticalOptions="CenterAndExpand"  Margin="0,0,0,0" 
+                 Orientation="Vertical" HorizontalOptions="StartAndExpand"
+                                    BackgroundColor="#cff9fa" >
+                                <Label Text="RC:"   FontSize="Small" FontFamily="Arial"
+                                       FontAttributes="Bold"  TextColor="Black"/>  
+                             <Label Text="{Binding  RATION_CARD_NUMBER}"  FontSize="Small" FontFamily="Arial"
+                                    FontAttributes="Bold"  TextColor="Blue"/>
+                                </StackLayout>
+                        <Line   X1="0" X2="0" Y1="0" Y2="50"  Stroke="Black" HorizontalOptions="Start" StrokeThickness="0.5" />
+    
+                            <StackLayout  Padding="5" VerticalOptions="CenterAndExpand"  Margin="0,0,0,0" 
+                 Orientation="Vertical" HorizontalOptions="StartAndExpand"
+                                    BackgroundColor="BlanchedAlmond" >
+                                <Label Text="ekyc Status:"   FontSize="Small" FontFamily="Arial"
+                                       FontAttributes="Bold"   TextColor="Black"/>  
+                             <Label Text="{Binding  ekyc_status}" FontSize="Medium" x:Name="ekyc_status_" FontFamily="Arial"
+                                     FontAttributes="Bold" BackgroundColor="yellow" TextColor="DarkBlue"    />
+                                </StackLayout>
+                                    <StackLayout   Padding="5" VerticalOptions="CenterAndExpand"  Margin="0,0,0,0" 
+                 Orientation="Vertical" HorizontalOptions="StartAndExpand"
+                                     BackgroundColor="#cff9fa" >
+             
+                                   </StackLayout>
+            
+                         </StackLayout>
+                                
+                     </ViewCell>
+                 </DataTemplate>
+             </ListView.ItemTemplate>                     
+         </ListView>
+                       
+    </StackLayout>
+        </ContentPage>

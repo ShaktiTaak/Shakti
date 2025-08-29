@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="hhh.Final_Page">
+    <ScrollView>
+<StackLayout    Margin="20,0,0,0" HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"   BackgroundColor="#cff9fa" >
+                   
+          <StackLayout VerticalOptions="Start"  Margin="0,0,0,0" 
+                 Orientation="Horizontal"  BackgroundColor="#e0d482" >
+         <Image  HeightRequest="75" WidthRequest="100"  Source="logooo.png"
+                           HorizontalOptions="Start"  VerticalOptions="Start"  />
+        <Label   x:Name="dpt" Text="PDS Data and Aadhaar Data"
+                Margin="0,20,0,0"
+               TextColor= "#184996" FontAttributes="Bold"  FontSize="Large" HorizontalOptions="CenterAndExpand"  ></Label>
+                 <Image  HeightRequest="75" WidthRequest="100"  Source="aadhar_image.png"
+                           HorizontalOptions="Start"  VerticalOptions="Start"  />
+    </StackLayout>
+
+                <Grid>
+              <Grid.RowDefinitions>
+    <RowDefinition Height="Auto"/>
+    <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="100" />
+    <ColumnDefinition Width="100" />
+   <ColumnDefinition Width="100" />
+       <ColumnDefinition Width="100" />
+    <ColumnDefinition Width="100" />
+  
+  </Grid.ColumnDefinitions>   
+
+                <!--  <Label  Grid.Row="1"  Grid.Column="0" Text="PDS Data"
+               
+               TextColor= "#184996" FontAttributes="Bold"  FontSize="Medium" HorizontalOptions="CenterAndExpand"  ></Label>
+
+               <Label  Grid.Row="1"  Grid.Column="2" Text="Aadhaar Data"
+            
+               TextColor= "#184996" FontAttributes="Bold"  FontSize="Medium" HorizontalOptions="CenterAndExpand"  ></Label>-->
+
+                        <Label Margin="20,0,0,0" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0"  Text="PDS Data"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="#1e1ed9"
+                    FontSize="Medium" BackgroundColor="#cff9fa"  />
+
+               <Label Margin="20,0,0,0" Grid.Row="2" Grid.Column="0"  Text="Name"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small" BackgroundColor="#cff9fa"  />
+            
+               <Label  Margin="20,0,0,0" Grid.Row="2" Grid.Column="1"  x:Name="name"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small" BackgroundColor="#cff9fa"  />
+
+                       <Label Margin="20,0,0,0" Grid.Row="3" Grid.Column="0"  Text="DOB"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small"  BackgroundColor="#cff9fa" />
+            
+               <Label Margin="0,0,0,0" Grid.Row="3" Grid.Column="1"  x:Name="dob"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small" BackgroundColor="#cff9fa"  />
+
+                      <Label Margin="20,0,0,0" Grid.Row="4" Grid.Column="0"  Text="Gender"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small"  BackgroundColor="#cff9fa" />
+            
+               <Label   Margin="0,0,0,0" Grid.Row="4" Grid.Column="1"  x:Name="gender"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small" BackgroundColor="#cff9fa"  />
+                 
+
+                           <Line Margin="10,0,0,0" Grid.Row="2"  X1="0" X2="0" Y1="0" Y2="25" Grid.Column="2" HorizontalOptions="Center" Stroke="Black" StrokeThickness="1" />
+  
+                       <Line Grid.Row="3" Margin="10,0,0,0" X1="0" X2="0" Y1="0" Y2="25" Grid.Column="2" HorizontalOptions="Center" Stroke="Black" StrokeThickness="1" />
+      <Line Grid.Row="4" Margin="10,0,0,0" X1="0" X2="0" Y1="0" Y2="25" Grid.Column="2" HorizontalOptions="Center" Stroke="Black" StrokeThickness="1" />
+
+                      <Label Margin="20,0,0,0" Grid.Row="1" Grid.ColumnSpan="2"  Grid.Column="3"  Text="Aadhaar Data"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="#1e1ed9"
+                    FontSize="Medium" BackgroundColor="#cff9fa"  />
+                     
+                    <Label  Grid.Row="2" Grid.Column="3"  Text="Name"   FontAttributes="Bold"
+                     HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small" BackgroundColor="#cff9fa"  />
+            
+               <Label  Grid.Row="2" Grid.Column="4"   x:Name="name_a"   FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small"  BackgroundColor="#cff9fa" />
+                    
+                       <Label  Grid.Row="3" Grid.Column="3"  Text="DOB"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand" BackgroundColor="#cff9fa"
+                    TextColor="Black"
+                    FontSize="Small"   />
+            
+               <Label  Grid.Row="3" Grid.Column="4"   x:Name="dob_a"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small" BackgroundColor="#cff9fa"  />
+
+                       
+                       <Label  Grid.Row="4" Grid.Column="3"  Text="Gender"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small" BackgroundColor="#cff9fa"  />
+            
+               <Label  Grid.Row="4" Grid.Column="4"   x:Name="gender_a"   FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    FontSize="Small" BackgroundColor="#cff9fa"  />
+
+                           <Button   Grid.Row="5" Grid.Column="1"  Grid.ColumnSpan="2" Text="GO TO HOME"  TextColor="White" CornerRadius="15"
+                BackgroundColor="#184996" 
+               FontSize="Small"   FontAttributes="Bold"  WidthRequest="220" HorizontalOptions="Center" ></Button>
+
+             <Button  Grid.Row="5" Grid.Column="3"  Grid.ColumnSpan="2" Text="GO TO MEMBER'S DETAIL"  TextColor="White" CornerRadius="15"
+                BackgroundColor="#184996"
+               FontSize="Small"   FontAttributes="Bold"  WidthRequest="220" HorizontalOptions="Center" ></Button>
+
+
+            <Image Grid.Row="2" Grid.Column="5"  x:Name="AadhaarImage" Grid.RowSpan="3" HorizontalOptions="End" WidthRequest="150"  HeightRequest="150" ></Image>
+
+                </Grid>
+   </StackLayout>
+        
+                   </ScrollView>  
+        </ContentPage>
+
+
